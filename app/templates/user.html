@@ -1,0 +1,12 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>User: {{ user.username }}</h1>
+    <hr>
+    <p>
+      {% for topic in topics %}
+      {% include '_topic_title.html' %}
+    </p>
+    {% endfor %}
+{% endblock %}
